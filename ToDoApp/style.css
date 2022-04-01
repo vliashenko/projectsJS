@@ -97,7 +97,6 @@ body {
     margin-bottom: 2px;
     margin-right: 10px;
     font-size: 20px;
-    width: 40px;
 }
 .form-check-label {
     width: 100%;
@@ -105,7 +104,6 @@ body {
 }
 .deletebtn {
     display: flex;
-    width: 100%;
     justify-content: end;
 }
 
