@@ -1,0 +1,132 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  background-image: url(https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Red-rock-canyon.jpg);
+  filter: brightness(0.9);
+  color: rgb(255, 255, 255);
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  scroll-behavior: smooth !important;
+}
+/* --------------------------------------------------------------------- */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35%;
+}
+.container {
+    width: 380px;
+    background-color: rgba(11, 11, 11, 0.564);
+    border-radius: 20px;
+}
+.searchContainer {
+    margin: 40px 15px 25px 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.searchBox {
+    border-radius: 20px;
+    padding: 7px 7px 7px 14px;
+    outline: none;
+    cursor: pointer;
+    width: calc(100% - 30px);
+    transition: 0.3s ease-in-out;
+}
+.searchBox:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.545);
+}
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 40px;
+    margin: 0px 0px 0px 5px;
+    padding: 12px;
+    border-radius:50%;
+    background-color:rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.searchBtn:hover {
+    background-color:rgb(182, 182, 182);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.529);
+}
+.fa-search {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.containerForIcon {
+  display: flex;
+  align-items:center;
+}
+.icon {
+  width: 40px;
+}
+.description {
+    margin: 15px;
+    font-size: 27px;
+    cursor: pointer;
+}
+.temperature {
+    margin: 25px 15px 15px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.options {
+    margin: 25px 15px 40px 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.icon {
+  cursor: pointer;
+}
+.isSunny {
+  cursor: pointer;
+}
+.humidity {
+  cursor: pointer;
+}
+.windSpeed {
+  cursor: pointer;
+}
