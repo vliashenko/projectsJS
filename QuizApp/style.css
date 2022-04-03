@@ -1,0 +1,120 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 4px black;
+  background-image: url(https://as1.ftcdn.net/jpg/02/54/40/74/500_F_254407421_uYfugcwkfW0QcQ3yFczaUQtp75HMQD9A.jpg);
+  font-family: 'Mukta';
+  font-weight: 500;
+  scroll-behavior: smooth !important;
+}
+/* --------------------------------------------------------------------- */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    
+}
+.quiz_container {
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.744);
+}
+.quiz_container.finished {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    color: rgb(128, 255, 89);;
+}
+.headLine {
+    text-align: center;
+}
+.mainQuestion {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+    color:rgb(255, 200, 0) ;
+    cursor: pointer;
+}
+.description {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px;
+    color:rgb(254, 254, 214) ;
+    cursor: pointer;
+}
+.questions {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0px 20px 0px;
+}
+input, label {
+    cursor: pointer;
+}
+input {
+    color: yellow;
+}
+li{
+    margin: 15px 0px 5px 0px;
+    cursor: pointer;
+}
+.submitBtn {
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0px 1px 5px black;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    box-shadow: 0px 3px 5px black;
+    background-color:rgb(128, 255, 89);
+    color:rgb(255, 255, 255);
+}
