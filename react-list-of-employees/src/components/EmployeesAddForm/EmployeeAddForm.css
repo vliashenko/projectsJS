@@ -1,0 +1,42 @@
+.app-add-form {
+    width: 100%;
+    margin-top: 30px;
+    padding:1.4rem 3rem 1rem 3rem;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    border-radius: 8px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.756);
+    color: rgb(255, 255, 255);
+}
+
+.add-form {
+    display: flex;
+}
+
+.add-form > input:not([type]), input[type="number"]:not(.browser-default),
+.add-form > input:not([type]), input[type="text"]:not(.browser-default) {
+    margin-right: 2rem;
+    margin-top: 5px;
+    color: white;
+}
+
+.add-form> button {
+    height: 3.358rem;
+}
+
+.new-post {
+    width: 100%;
+    
+}
+input:not([type]), input[type="number"]:not(.browser-default) {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2px;   
+    background-color:rgba(0, 0, 0, 0.44) !important; 
+   }
+   
+   input:not([type]):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]) {
+       border-bottom-color: rgb(255, 255, 255) !important;
+       box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px !important;
+   } 
+   

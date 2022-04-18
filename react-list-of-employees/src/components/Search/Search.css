@@ -1,0 +1,20 @@
+.row {
+ margin-bottom: 0 !important;  
+}
+
+.input-field {
+    margin-bottom: 0rem;
+}
+
+.input:not([type]), input[type="text"]:not(.browser-default) {
+ cursor: pointer;
+ border-radius: 10px;
+ padding: 2px;   
+ background-color:rgba(0, 0, 0, 0.44) !important; 
+}
+
+input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    color: white;
+    border-bottom-color: rgb(255, 255, 255) !important;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px !important;
+} 
