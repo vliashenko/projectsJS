@@ -3,7 +3,7 @@ import {Info} from '../Info/Info.js'
 import {Search} from '../Search/Search'
 import {Filter} from '../Filter/Filter'
 import {EmployeesList} from '../EmpoyeesList/EmployeesList'
-import {EmployeeAddForm} from '../EmployeesAddForm/EmployeeAddForm'
+import EmployeeAddForm from '../EmployeesAddForm/EmployeeAddForm'
 
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
     </div>
 
     <div className="employee-list">
-      <EmployeesList data={data}/>
+      <EmployeesList data={data} onDelete={id => console.log(id)}/>
     </div>
 
     <div className="add-form">

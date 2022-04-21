@@ -12,7 +12,8 @@
 }
 
 .list-group-item.increase .input-sum > input[type="text"]:not(.browser-default),
-.list-group-item.increase .employee-name {
+.list-group-item.increase .employee-name,
+.list-group-item.increase .fa-cookie {
     color: #e09f3e;
 }
 
@@ -33,6 +34,12 @@ label {
     width: 7rem;
     color: white;
 }
+
+.list-group-item.like .fa-star{
+    color: gold ;
+    font-size: 1.3rem ;
+}
+
 
 i {
     cursor: pointer;
