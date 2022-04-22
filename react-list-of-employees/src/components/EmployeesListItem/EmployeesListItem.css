@@ -24,12 +24,13 @@ input[type="checkbox"]:checked+span:not(.lever):before {
 
 label {
     color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .input-sum > input[type="text"]:not(.browser-default) {
     display: flex;
     align-items:center;
-    margin-left: 14rem;
     height: 1.6rem;
     width: 7rem;
     color: white;
