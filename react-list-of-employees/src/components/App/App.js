@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import './App.css'
 import {Info} from '../Info/Info.js'
-import {Search} from '../Search/Search'
-import {Filter} from '../Filter/Filter'
+import Search from '../Search/Search'
+import Filter from '../Filter/Filter'
 import {EmployeesList} from '../EmpoyeesList/EmployeesList'
 import EmployeeAddForm from '../EmployeesAddForm/EmployeeAddForm'
 
@@ -17,7 +17,9 @@ class App extends Component {
         {name: 'John C.',salary: 800, increase: true, rise: true,  id: 1 },
         {name: 'Alex M.',salary: 1600, increase: false, rise: false,  id: 2},
         {name: 'Slava L.',salary: 5000, increase: false, rise: false,  id: 3},
-      ]
+      ],
+      term: "",
+      filter: "all"
       
     }
 
@@ -37,6 +39,14 @@ class App extends Component {
         data: newArr
       }
 
+    })
+  }
+
+  searchEmp = (items, term) => {
+    if( term.length === 0 ) return items;
+
+    return items.filter(item => {
+      return item.name.indexOf(term) > -1
     })
   }
 
@@ -101,26 +111,47 @@ class App extends Component {
       })
     }))
   }
+
+  onUpdateSearch = (term) => {
+    this.setState({term});
+  }
+
+  filterPost = (items,filter) => {
+    switch (filter) {
+      case "rise":
+        return items.filter(elem => elem.rise);
+      case "moreThanThousand":
+        return items.filter(elem => elem.salary > 1000);
+      default:
+        return items;
+      
+    }
+  }
+
+  onFilterSelect = (filter) => {
+    this.setState({filter});
+  }
   
   render() {
-
+    const { data,term, filter } = this.state
     const employees = this.state.data.length;
     const increased = this.state.data.filter(elem => elem.increase === true).length
     const rewarded = this.state.data.filter(elem => elem.rise === true).length
-
+    const visibleData = this.filterPost(this.searchEmp(data, term), filter);
   return (
 
     <div className="app">
       <Info employees={employees} increased={increased} rewarded={rewarded}/>
     
       <div className="search-panel">
-        <Search/>
-        <Filter/>
+        <Search onUpdateSearch={this.onUpdateSearch}/>
+        <Filter 
+        onFilterSelect={this.onFilterSelect}/>
       </div>
   
       <div className="employee-list">
         <EmployeesList 
-        data={this.state.data} 
+        data={visibleData} 
         onDelete={this.deleteItem}
         onToggleProp={this.onToggleProp}
         />

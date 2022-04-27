@@ -20,20 +20,12 @@ class EmployeeAddForm extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        if(this.state.name.length > 0 && this.state.salary.length > 0){
-          this.props.addItem(this.state.name, this.state.salary);
+        if (this.state.name.length < 3 || !this.state.salary) return;
+        this.props.onAdd(this.state.name, this.state.salary);
         this.setState({
             name: '',
             salary: ''
-        })  
-        } else {
-            alert("Fields are empty")
-        
-            this.setState({
-                name: '',
-                salary: ''
-            }) 
-        } 
+        })
         
     }
 
