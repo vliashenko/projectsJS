@@ -3,7 +3,7 @@
 
 DONE!<br>
 ToDo type list with employees. <br>
-Now, this app can add, delete, setIncrease and setRise attributes. Also it is showing count of all employees and count of those who was rised, and filter all employees dinamicly<br>
+Now, this app can add, delete, setIncrease and setRise attributes. Also it is showing count of all employees and count of those who was rised, and filter all employees dynamically<br>
 <br>
 Technology: ReactJS;<br>
 Kits: Font-Awesome, Materialize<br>
