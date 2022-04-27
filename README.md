@@ -2,9 +2,8 @@
 apps and projects made with HTML, CSS, JavaScript, React, JSX, RxJS<br>
 You can check the photo of these projects using the following link: https://drive.google.com/drive/folders/1FOOMKMIc7ieHYNI94ZtURsSng3evrqzb?usp=sharing <br>
 <br>
-//-----------------------------------------------<br>
-IN PROGRESS react-list-of employees. Soon.<br>
-//-----------------------------------------------<br>
+<br>
+New ReactApp react-list-of employees from my UDEMY course of React. (more than a week) <br>
 The newest one is GitHubProfile finder(2 hours)<br>
 The one that took the most time, most complex and interesting is the RecipeApp(3-4 hours)<br>
 The most goodLooking is the WeatherAPP(2 hours)<br>
