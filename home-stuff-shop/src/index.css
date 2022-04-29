@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 50px auto;
+}
+
+header {
+  position: relative;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #222;
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+
+.fa-shopping-cart {
+  position: relative;
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+.amount {
+  font-size: 11px;
+  position: absolute;
+  bottom: 14px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 16px;
+  border-radius:50%;
+}
+
+.fa-shopping-cart:hover,
+.fa-shopping-cart.active {
+  color: #858585;
+  transform: scale(1.4);
+}
+
+header .shop-cart {
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background:rgb(243, 243, 243);
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.381);
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url('https://assets.bicolor.com.ua/2020/07/imola-the-room-interio-05.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #b5b5b5 ;
+  position: relative;
+}
+
+header .presentation::after {
+  content: "Найкращі товари для вашої оселі!";
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 500px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 2px 24px black;
+}
+
+header .presentation::before {
+  content: "по низьким цінам";
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  width: 400px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0px 2px 24px black;
+}
+
+.category {
+  border-top: 1px solid rgba(152, 152, 152, 0.316);
+  border-bottom: 1px solid rgba(152, 152, 152, 0.316);
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+  font-size:20px;
+  cursor: pointer;
+}
+
+.category div {
+  line-height: 65px;
+  font-weight: 400;
+  transition: transform 500ms ease;
+}
+
+.category div:hover {
+  transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main .item {
+  width: 320px;
+  margin: 0 1rem 50px 1rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 2px 34px rgba(0, 0, 0, 0.29);
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main .item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease-in-out;
+}
+
+main .item img:hover {
+  transform: scale(1.04);
+  filter: brightness(0.8);
+}
+
+main h2,
+ main p,
+  main b {
+  margin: 10px 20px;
+  color: #333;
+}
+
+main b {
+  color: #76674f;
+}
+
+main .add-to-cart {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background: #d2a263;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+  transform: scale(1.15);
+}
+
+.product-page {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.product-image-container {
+  width:370px;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease-in-out;
+}
+
+.product-item-desc {
+  width: 40%;
+}
+
+.product-item-desc .description {
+  margin: 3rem 0 3rem 0;
+}
+
+.price {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  margin-top: 85px;
+}
+
+.atrributes {
+  display: flex;
+}
+
+.atrributes div{
+  margin: 4rem 20px 0 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(164, 164, 164);
+  position: relative;
+  cursor: pointer;
+}
+
+.checked:after {
+  position: absolute;
+  left: 30%;
+  content: '✓';
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(13, 255, 0);
+}
+
+.btn-container div{
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  background: #d2a263;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 35px;
+  transition: transform 400ms ease;
+  cursor: pointer;
+}
+
+.btn-container div:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
